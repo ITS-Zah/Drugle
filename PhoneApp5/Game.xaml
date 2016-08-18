@@ -1,0 +1,173 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp5.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+    <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
+    <Grid x:Name="LayoutRoot" Background="#FFEAFB9D" Margin="-2,0,7,0" >
+        <Grid x:Name="gameMap" Margin="0,0,-21,209">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle x:Name="PlayerHumanInterface"  Grid.Column="5" Fill="#FF027802" HorizontalAlignment="Left" Height="49" Stroke="Black" VerticalAlignment="Top" Width="40" Grid.Row="4" RadiusX="7" RadiusY="10" Canvas.ZIndex="1"/>
+            <Rectangle x:Name="PlayerPhoneInterface"  Grid.Column="6" Fill="#FFF11414" HorizontalAlignment="Left" Height="49" Stroke="Black" VerticalAlignment="Top" Width="40" Grid.Row="4" RadiusX="7" RadiusY="10" Canvas.ZIndex="1"/>
+            <Rectangle x:Name="GoalInterface_1"  Grid.Column="7" Fill="#FFF1C52D" HorizontalAlignment="Left" Height="49" Stroke="Black" VerticalAlignment="Top" Width="40" Grid.Row="4" RadiusX="7" RadiusY="10" Canvas.ZIndex="1"/>
+            <Rectangle x:Name="GoalInterface_2"  Grid.Column="7" Fill="#FFF1C52D" HorizontalAlignment="Left" Height="49" Stroke="Black" VerticalAlignment="Top" Width="40" Grid.Row="4" RadiusX="7" RadiusY="10" Canvas.ZIndex="1"/>
+            <Rectangle x:Name="GoalInterface_3"  Grid.Column="7" Fill="#FFF1C52D" HorizontalAlignment="Left" Height="49" Stroke="Black" VerticalAlignment="Top" Width="40" Grid.Row="4" RadiusX="7" RadiusY="10" Canvas.ZIndex="1"/>
+            <TextBlock x:Name="Weight_Goal_1" Grid.Column="4" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="9" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="39" Width="47" Canvas.ZIndex="1"/>
+            <TextBlock x:Name="Weight_Goal_2" Grid.Column="4" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="9" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="39" Width="47" Grid.ColumnSpan="2" Grid.RowSpan="2" Canvas.ZIndex="1"/>
+            <TextBlock x:Name="Weight_Goal_3" Grid.Column="4" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="9" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="39" Width="47" Grid.ColumnSpan="2" Grid.RowSpan="2" Canvas.ZIndex="1"/>
+            <Rectangle Grid.Column="1" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="2" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="3" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="4" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="5" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="6" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="7" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="8" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="9" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="10" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="1" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="2" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="3" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="4" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="5" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="6" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="7" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="8" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="9" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="10" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="1" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="2" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="3" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="4" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="5" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="6" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="7" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="8" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="9" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="10" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="1" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="2" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="3" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="4" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="5" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="6" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="7" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="8" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="9" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="10" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="1" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="5" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="2" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="5" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="3" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="5" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="4" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="5" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="5" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="5" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="6" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="5" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="7" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="5" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="8" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="5" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="9" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="5" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="10" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="5" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="1" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="2" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="3" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="4" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="5" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="6" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="7" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="8" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="9" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="10" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="6" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="1" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="7" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="2" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="7" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="3" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="7" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="4" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="7" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="5" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="7" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="6" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="7" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="7" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="7" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="8" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="7" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="9" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="7" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="10" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="7" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="1" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="8" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="2" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="8" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="3" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="8" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="4" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="8" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="5" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="8" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="6" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="8" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="7" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="8" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="8" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="8" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="9" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="8" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="10" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="8" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="1" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="9" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="2" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="9" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="3" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="9" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="4" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="9" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="5" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="9" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="6" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="9" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="7" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="9" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="8" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="9" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="9" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="9" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="10" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="9" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="1" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="10" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="2" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="10" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="3" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="10" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="4" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="10" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="5" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="10" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="6" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="10" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="7" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="10" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="8" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="10" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="9" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="10" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle Grid.Column="10" Fill="#FF35E60E" HorizontalAlignment="Left" Height="49" Grid.Row="10" Stroke="Black" VerticalAlignment="Top" Width="40" RadiusX="7" RadiusY="10"/>
+            <Rectangle MouseLeftButtonDown="LayoutRoot_MouseLeftButtonDown" MouseLeftButtonUp="LayoutRoot_MouseLeftButtonUp" Grid.ColumnSpan="12" Fill="#FF25973E" HorizontalAlignment="Left" Height="577" Margin="10,39,0,-25" RadiusY="10" RadiusX="7" Grid.RowSpan="12" Stroke="Black" VerticalAlignment="Top" Width="455" Opacity="0" Canvas.ZIndex="2"/>
+
+        </Grid>
+        <ProgressBar x:Name="ProgressBarPlayer" HorizontalAlignment="Left"  Height="27" Margin="335,670,0,0" VerticalAlignment="Top" Width="100" Background="#FF027802" Foreground="#FF027802" Maximum="1000" RenderTransformOrigin="0.5,0.5">
+            <ProgressBar.RenderTransform>
+                <CompositeTransform ScaleY="3"/>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+        <ProgressBar x:Name="ProgressBarPhone" HorizontalAlignment="Left" Height="34" Margin="30,670,0,0" VerticalAlignment="Top" Width="126" Maximum="1000" FontSize="20" Background="#FFFB0707" BorderThickness="0" RenderTransformOrigin="0.5,0.5">
+            <ProgressBar.RenderTransform>
+                <CompositeTransform ScaleY="3"/>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+        <TextBlock x:Name="ProgressBarPlayerTextBlock" HorizontalAlignment="Left" Margin="274,699,-53,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe WP" FontSize="26.667" Foreground="#FF027802" Text="Points 000/1000" Width="254"/>
+        <TextBlock x:Name="ProgressBarPhoneTextBlock" HorizontalAlignment="Left" Margin="2,699,0,0" TextWrapping="Wrap" Text="Points 000/1000" VerticalAlignment="Top" Foreground="#FFFB0707" FontSize="26.667" Width="221"/>
+        <TextBlock x:Name="LeveltextBlock" HorizontalAlignment="Left" Margin="173,648,0,0" TextWrapping="Wrap" Text="Level 1" VerticalAlignment="Top" Foreground="#FF669143" Height="46" Width="142" IsHitTestVisible="False" FontSize="40"/>
+    </Grid>
+
+</phone:PhoneApplicationPage>

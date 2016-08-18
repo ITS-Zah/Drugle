@@ -1,0 +1,23 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp5.StartMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/Images/Start.png"/>
+        </Grid.Background>
+        <Button x:Name="Start" Content="Button" HorizontalAlignment="Left" Margin="98,344,0,0" Click="StartClick" VerticalAlignment="Top" Width="136" Opacity="0" Height="48"/>
+        <Button x:Name="Exit" Content="Button" HorizontalAlignment="Left" Margin="286,422,0,0" VerticalAlignment="Top" Click="Exit_Click" Opacity="0" Height="48" Width="116"/>
+        <Button x:Name="ref" Content="Button" HorizontalAlignment="Left" Margin="266,274,0,0" Click="Ref_Click" VerticalAlignment="Top" Width="100" Opacity="0" Height="50"/>
+    </Grid>
+</phone:PhoneApplicationPage>
